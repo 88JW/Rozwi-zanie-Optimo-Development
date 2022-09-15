@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+}
+
+@media screen and (max-width: 583px) {
+}
+body {
+  background-color: aqua;
+}
+@media screen and (min-width: 584px) and (max-width: 900px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 901px) {
+  body {
+    background-color: red;
+  }
+}
