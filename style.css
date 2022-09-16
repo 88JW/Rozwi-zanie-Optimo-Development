@@ -17,12 +17,11 @@ body{
 
 .container {
   position: relative;
-
 }
 
 .one {
-
   height: 30vh;
+
 }
 
 .kwadraty-container {
@@ -49,28 +48,38 @@ body{
 }
 
 .two {
-   height: 30vh;
+  height: 30vh;
+
+  
+}
+
+.two-conteiner{
   display: flex;
   align-items: center;
   align-content: center;
+  height: 30vh;
+ 
+  width: 100%;
+
+
 }
 
 .paski-container {
   width: 50%;
+
 }
 
 .paski {
-  height: 40px;
+  height: 30px;
   background-color: #0000ff;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  margin: 25px;
   content: "";
 }
 
 .kolo {
   background: #008080;
   border-radius: 50%;
-  width: 50%;
+  width: 30%;
 }
 
 .kolo:before {
@@ -110,6 +119,11 @@ body{
     height: 45vh;
   }
 
+  .kolo {
+  
+  width: 50%;
+}
+
   .three {
     position: absolute;
     right: 0;
@@ -142,6 +156,11 @@ body{
     float: left;
     height: 90vh;
   }
+
+   .kolo {
+  
+  width: 50%;
+}
   .three {
     float: left;
   }
