@@ -5,19 +5,155 @@
   scroll-behavior: smooth !important;
 }
 
-@media screen and (max-width: 583px) {
+body{
+
+  background-color:#008000;
 }
-body {
-  background-color: aqua;
-}
-@media screen and (min-width: 584px) and (max-width: 900px) {
-  body {
-    background-color: blue;
-  }
+.banner {
+  width: 100%;
+  height: 10vh;
+  background-color: #808000;
 }
 
-@media (min-width: 901px) {
-  body {
-    background-color: red;
+.container {
+  position: relative;
+
+}
+
+.one {
+
+  height: 30vh;
+}
+
+.kwadraty-container {
+  width: 50%;
+  margin-left: 5%;
+  padding-top: 5%;
+}
+
+.kwadrat {
+  width: 40%;
+    background-color:#ff0000;
+    transform: rotate(45deg);
+    content: "";
+  }
+
+  .kwadrat:before {
+    content: "";
+    padding: 50% 0;
+    display: inline-block;
+  }
+
+  #pierwszy {
+  margin-left: 30%;
+}
+
+.two {
+   height: 30vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.paski-container {
+  width: 50%;
+}
+
+.paski {
+  height: 40px;
+  background-color: #0000ff;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  content: "";
+}
+
+.kolo {
+  background: #008080;
+  border-radius: 50%;
+  width: 50%;
+}
+
+.kolo:before {
+  content: "";
+  padding: 50% 0;
+  display: inline-block;
+}
+
+.three {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloknapis {
+  width: 50%;
+  height: 90%;
+  background-color: #0000ff;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 584px) {
+  .one {
+    height: 45vh;
+  }
+
+.kwadraty-container {
+  width: 90%;
+  margin-left: 9%;
+  padding-top: 9%;
+}
+  .two {
+    height: 45vh;
+  }
+
+  .three {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 90vh;
+  }
+
+  .bloknapis {
+ 
+  background-color: #c83737 ;
+}
+
+  .col-s-6 {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 901px) {
+  .one {
+    float: left;
+    height: 90vh;
+  }
+ 
+.kwadraty-container {
+  width: 100%;
+  margin-left: 10%;
+  padding-top: 10%;
+}
+
+  .two {
+    float: left;
+    height: 90vh;
+  }
+  .three {
+    float: left;
+  }
+
+   .bloknapis {
+ 
+  background-color: #ffffff;
+}
+  .col-3 {
+    width: 25%;
+  }
+  .col-6 {
+    width: 50%;
   }
 }
