@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth !important;
-}
+ }
 
 body {
   background-color: #008000;
@@ -19,7 +18,7 @@ body {
   position: relative;
 }
 
-.one {
+.pierwszy-blok {
   height: 30vh;
 }
 
@@ -35,7 +34,10 @@ body {
   background-color: #ff0000;
   transform: rotate(45deg);
   content: "";
+  transition(0.4s);
 }
+
+
 
 .kwadrat:before {
   content: "";
@@ -43,20 +45,19 @@ body {
   display: inline-block;
 }
 
-#pierwszy {
+#pierwszy-kwadrat {
   margin-left: 30%;
 }
 
-.two {
+.drugi-blok {
   height: 30vh;
 }
 
-.two-conteiner {
+.drugi-blok-conteiner {
   display: flex;
   align-items: center;
   align-content: center;
   height: 30vh;
-
   width: 100%;
 }
 
@@ -85,14 +86,14 @@ body {
   display: inline-block;
 }
 
-.three {
+.trzeci-blok {
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.bloknapis {
+.trzeci-blok-napis {
   border: 5px solid black;
   width: 50%;
   height: 90%;
@@ -108,8 +109,9 @@ body {
 }
 
 @media only screen and (min-width: 583px) {
-  .one {
+  .pierwszy-blok {
     height: 45vh;
+   
   }
 
   .kwadraty-container {
@@ -117,7 +119,7 @@ body {
     margin-left: 9%;
     padding-top: 9%;
   }
-  .two {
+  .drugi-blok {
     height: 45vh;
   }
 
@@ -125,14 +127,15 @@ body {
     width: 50%;
   }
 
-  .three {
+  .trzeci-blok {
     position: absolute;
     right: 0;
     top: 0;
     height: 90vh;
+   
   }
 
-  .bloknapis {
+  .trzeci-blok-napis {
     font-size: 30px;
     background-color: #c83737;
   }
@@ -142,7 +145,7 @@ body {
   }
 }
 @media only screen and (min-width: 901px) {
-  .one {
+  .pierwszy-blok {
     float: left;
     height: 90vh;
   }
@@ -153,25 +156,25 @@ body {
     padding-top: 10%;
   }
 
-  .two {
+  .drugi-blok {
+    
     float: left;
     height: 90vh;
   }
 
-  .two-conteiner {
+  .drugi-blok-conteiner {
     margin-top: 30%;
   }
 
   .kolo {
     width: 50%;
   }
-  .three {
+  .trzeci-blok {
     float: left;
   }
 
-  .bloknapis {
+  .trzeci-blok-napis {
     font-size: 36px;
-
     background-color: #ffffff;
   }
 
