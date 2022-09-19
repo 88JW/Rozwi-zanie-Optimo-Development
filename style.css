@@ -5,14 +5,14 @@
   scroll-behavior: smooth !important;
 }
 
-body{
-
-  background-color:#008000;
+body {
+  background-color: #008000;
 }
 .banner {
   width: 100%;
   height: 10vh;
   background-color: #808000;
+  border-bottom: 5px solid black;
 }
 
 .container {
@@ -21,7 +21,6 @@ body{
 
 .one {
   height: 30vh;
-
 }
 
 .kwadraty-container {
@@ -31,45 +30,42 @@ body{
 }
 
 .kwadrat {
+  border: 5px solid black;
   width: 40%;
-    background-color:#ff0000;
-    transform: rotate(45deg);
-    content: "";
-  }
+  background-color: #ff0000;
+  transform: rotate(45deg);
+  content: "";
+}
 
-  .kwadrat:before {
-    content: "";
-    padding: 50% 0;
-    display: inline-block;
-  }
+.kwadrat:before {
+  content: "";
+  padding: 50% 0;
+  display: inline-block;
+}
 
-  #pierwszy {
+#pierwszy {
   margin-left: 30%;
 }
 
 .two {
   height: 30vh;
-
-  
 }
 
-.two-conteiner{
+.two-conteiner {
   display: flex;
   align-items: center;
   align-content: center;
   height: 30vh;
- 
+
   width: 100%;
-
-
 }
 
 .paski-container {
   width: 50%;
-
 }
 
 .paski {
+  border: 5px solid black;
   height: 30px;
   background-color: #0000ff;
   margin: 25px;
@@ -77,6 +73,7 @@ body{
 }
 
 .kolo {
+  border: 5px solid black;
   background: #008080;
   border-radius: 50%;
   width: 30%;
@@ -96,33 +93,37 @@ body{
 }
 
 .bloknapis {
+  border: 5px solid black;
   width: 50%;
   height: 90%;
   background-color: #0000ff;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 [class*="col-"] {
   width: 100%;
 }
 
-@media only screen and (min-width: 584px) {
+@media only screen and (min-width: 583px) {
   .one {
     height: 45vh;
   }
 
-.kwadraty-container {
-  width: 90%;
-  margin-left: 9%;
-  padding-top: 9%;
-}
+  .kwadraty-container {
+    width: 90%;
+    margin-left: 9%;
+    padding-top: 9%;
+  }
   .two {
     height: 45vh;
   }
 
   .kolo {
-  
-  width: 50%;
-}
+    width: 50%;
+  }
 
   .three {
     position: absolute;
@@ -132,9 +133,9 @@ body{
   }
 
   .bloknapis {
- 
-  background-color: #c83737 ;
-}
+    font-size: 30px;
+    background-color: #c83737;
+  }
 
   .col-s-6 {
     width: 50%;
@@ -145,34 +146,42 @@ body{
     float: left;
     height: 90vh;
   }
- 
-.kwadraty-container {
-  width: 100%;
-  margin-left: 10%;
-  padding-top: 10%;
-}
+
+  .kwadraty-container {
+    width: 100%;
+    margin-left: 10%;
+    padding-top: 10%;
+  }
 
   .two {
     float: left;
     height: 90vh;
   }
 
-   .kolo {
-  
-  width: 50%;
-}
+  .two-conteiner {
+    margin-top: 30%;
+  }
+
+  .kolo {
+    width: 50%;
+  }
   .three {
     float: left;
   }
 
-   .bloknapis {
- 
-  background-color: #ffffff;
-}
+  .bloknapis {
+    font-size: 36px;
+
+    background-color: #ffffff;
+  }
+
   .col-3 {
     width: 25%;
   }
-  .col-6 {
-    width: 50%;
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
   }
 }
